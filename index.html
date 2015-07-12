@@ -2,74 +2,153 @@
 <html lang="en">
 <head>
   <title>Malin King</title>
-  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/main.css">
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href='http://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 </head>
 
-<!-- use "theme-invert" class on bright backgrounds, also try "text-shadows" class -->
-<body class="theme-invert">
-      <header class="navbar navbar-default navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3" ng-click="isCollapsed = !isCollapsed">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand visible-xs" href="#">UI Bootstrap</a>
-          </div>
-          <nav class="hidden-xs">
-            <ul class="nav navbar-nav">
-              <a href="#" role="button" class="navbar-brand">
-                  UI Bootstrap
-              </a>
-              <li class="dropdown">
-                <a href="#" role="button" class="dropdown-toggle">
-                    Directives <b class="caret"></b>
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a href="#accordion">Accordion</a></li><li><a href="#alert">Alert</a></li><li><a href="#buttons">Buttons</a></li><li><a href="#carousel">Carousel</a></li><li><a href="#collapse">Collapse</a></li><li><a href="#datepicker">Datepicker</a></li><li><a href="#dropdownToggle">Dropdown Toggle</a></li><li><a href="#modal">Modal</a></li><li><a href="#pagination">Pagination</a></li><li><a href="#popover">Popover</a></li><li><a href="#progressbar">Progressbar</a></li><li><a href="#rating">Rating</a></li><li><a href="#tabs">Tabs</a></li><li><a href="#timepicker">Timepicker</a></li><li><a href="#tooltip">Tooltip</a></li><li><a href="#typeahead">Typeahead</a></li>
-                </ul>
-              </li>
-              <li><a href="#getting_started">Getting started</a></li>
-            </ul>
-          </nav>
-          <nav class="visible-xs" collapse="!isCollapsed">
-              <ul class="nav navbar-nav">
-                  <li><a href="#getting_started" ng-click="isCollapsed = !isCollapsed">Getting started</a></li>
-                  <li><a href="#directives_small" ng-click="isCollapsed = !isCollapsed">Directives</a></li>
-              </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
+<body>
 
-
-
-<!--   <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="navbar navbar-static-top">
     <div class="container">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#home">Malin King</a>
-      </div>
-      <div id="navbar" class="collapsed navbar-collapse">
-        <ul class="nav navbar-nav pull-right">
-          <li><a href="#welcome" class="active">Welcome</a></li>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+      <a href="#welcome" class="navbar-brand">FitFourAKing</a>
+      <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse navHeaderCollapse">
+        <ul class="nav navbar-nav navbar-right pull-right">
+          <li class="aboutme"><a href="#about">About Me</a></li>
+          <li class="portfolio"><a href="#portfolio">Projects</a></li>
+          <li class="contact"><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
-  </nav>
+  </div>
 
-  <footer class="footer">
-    <div class="container">
-      <p class="text-muted">All content created by Malin King. FitFourAKing Productions.</p>
+  <!-- Welcome -->
+  <section class="section" id="welcome">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text-center">
+        <h1 class="title">Malin King</h1>
+        <h2 class="subtitle">Full stack developer, world traveler, outdoor enthusiast, photographer.</h2>
+
+        <h3 class="tagline">
+          Welcome to the site.<br>
+          Cucumber infused water is on the left.
+        </h3>
+      </div>
     </div>
-  </footer> -->
+  </div>
+  </section>
 
+  <!-- About Me -->
+  <section class="section" id="about">
+  <div class="container">
+    <h2 class="text-center title">Background</h2>
+    <div class="row">
+      <div class="col-sm-5 col-sm-offset-1">
+        <h4><strong>In a nutshell..<br></strong></h4>
+        <p class="me"> I am a full stack web developer that recently completed the Web Development Immersive program at General Assembly. With a background in all aspects of business from management and operations to sales and hospitality, I am passionate about startups and growth-stage companies working to provide exemplary customer experiences.</p>
+      </div>
+      <div class="col-sm-5">
+        <h4><strong>When I'm not crushing code...<br></strong></h4>
+        <p class="me">You can find me on the water or in the mountains. I am passionate about skiing, hiking, paddleboarding. Lucky enough to have lived, traveled, and explored in over 35 different countries and experienced four total solar eclipses, I am always looking to meet new people and chase new opportunities.</p>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="section" id="portfolio">
+  <div class="container">
+    <h2 class="text-center title">Portfolio</h2>
+      <p class="lead text-center">Take a peek at what I've been working on recently:
+      </p>
+      <br/>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="images/screenshots/turingSurvey.png">
+          <div class="caption">
+            <h3><a href="https://turing-survey.herokuapp.com">The Turing Survey</a></h3>
+            <p>A backend API that's built on Node, Express, MongoDB and uses server-side rendering with Jade. The app allows users to create custom surveys and then view the collected responses on a Dashboard. A new user is first prompted to register a username and password where as a returning user can login (if expired session). From the Dashboard view, users have the following options: create new surveys, add questions to a survey, edit questions within an existing survey, delete a question from a survey, and delete an entire survey.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="images/screenshots/tappster.png" alt="">
+          <div class="caption">
+            <h3><a href="http://fitfouraking.github.io/tappster">Tappster</a></h3>
+            <p>A rails backend with a jQuery frontend, This a (Boston) beer lover's tool. The app enables a user to search by a specific location, be it a bar or restaurant, and see the current list of beers on tap. Alternatively, a user can perform a search on an individual beer to see what locations nearby offer that beverage on draught. All beer lists are public in the sense that any user can contribute/update/delete the current draught list at a location - esentially crowd-sourcing the data in way that helps everybody stay as current as possible with search results.</p>
+          </div>
+        </div>
+      </div>
+    <!-- </div> -->
+    <!-- <div class="row"> -->
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="images/screenshots/ticTac.png" alt="">
+          <div class="caption">
+            <h3><a href="https://redsox.firebaseapp.com">Tic Tac Toe, Me Out To The Ballgame</a></h3>
+            <p>In this modern twist on an old classic, the first player to move is "Red Sox" and the second player is "Yankees." The game board automatically resets at the conclusion of each game and records each players' win count in the scoreboard below the grid. Either player can reset the game count to zero by clicking the button in the scoreboard area.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="images/screenshots/.png" alt="">
+          <div class="caption">
+            <h3>Project 4</h3>
+            <p>Under Construction...</p>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+  <div class="container">
+    <h2 class="text-center title">Contact Me</h2>
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 text-center">
+          <p class="lead">Questions, feedback, looking to connect?</p>
+            <p>Please reach out to me via email or find me at any of the following resources.
+            </p>
+            <p><b><a href="mailto:malinbking@gmail.com">malinbking@gmail.com</a></b><br><br></p>
+          <ul class="list-inline list-social">
+            <li><a href="https://www.linkedin.com/in/malinking" class="btn btn-link"><i class="fa fa-linkedin fa-2x"></i> LinkedIn</a></li>
+            <li><a href="https://github.com/fitfouraking" class="btn btn-link"><i class="fa fa-github fa-2x"></i> Github</a></li>
+            <li><a href="https://twitter.com/fitfouraking" class="btn btn-link"><i class="fa fa-twitter fa-2x"></i> Twitter</a></li>
+            <li><a href="http://malinking.tumblr.com" class="btn btn-link"><i class="fa fa-tumblr fa-2x"></i> Tumblr</a></li>
+          </ul>
+        </div>
+      </div>
+  </div>
+  </section>
+
+  <!-- <div class="navbar navbar-fixed-bottom">
+    <div class="container">
+      <div class="navbar-text pull-right">
+        <p class="text-muted pull-right">FitFourAKing Productions.</p>
+      </div>
+    </div>
+  </div>
+ -->
+
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
