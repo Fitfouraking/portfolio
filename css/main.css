@@ -12,7 +12,6 @@ body {
   line-height: 1.5em;
   font-size: 20px;
   font-family: 'Pontano Sans', sans-serif;
-  /*color: rgba(255,255,255,.8);*/
   font-weight: normal;
 }
 
@@ -50,6 +49,7 @@ h1 {
 @media (min-width: 768px) {
   .section { padding-top: 115px;}
   #portfolio { padding-top: 30px;}
+  #about { padding-top: 50px;}
 }
 
 .me {
